@@ -1,0 +1,61 @@
+go to mysql workbench -> type (create database sms) -> execute the query
+a data-base named sms gets created
+
+we create seperate layers where in we create seperate packages for each layers
+//implement list students feature , for this we move to backend then go to frontend
+
+if spring bean has one constructor we can avoid using @autowired annotation 
+after changes in service layer move to controller layer
+
+while writing handler mapping we are passing a parameter of model(package name must be -> import org.springframework.ui.Model )
+
+springboot automatically configure view resolver for thymleaf
+springboot finds all thymleaf folder in templates so need to keep all thymleaf folders into templates
+
+instead of adding the details manually we can write code that adds to table
+go to spring boot main entry point class => implement commandlinerunner here we write logic to insest records
+
+
+
+
+
+
+
+
+// Implement Add student feature -> 
+
+th:href="@{/students/new}" -> here @ indicates contextpath(application name) of application 
+th:object="${student}" -> accessing empty student 
+th:field="*{firstName}" -> Note: thymleaf attribute used to bind the input text to the firstname and firstname filed must be same 
+as it is declare in entity  
+
+@GetMapping("/students")
+	public String saveStudent(@ModelAttribute("student") Student student) {
+		
+	}
+	
+	=> we use @ModelAttribute to bind form data to the object. object is ("student") and bind to Student entity
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
